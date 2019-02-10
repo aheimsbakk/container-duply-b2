@@ -4,7 +4,7 @@
 # Docker with newer version of duplicity, duply and backblaze integration
 # 
 # Example: 
-#   docker run -u $UID -t -v $HOME:/data --rm duply-b2 usage
+#   docker run -u $UID -t -v $HOME:/data --rm aheimsbakk/duply-b2 usage
 
 # Base image
 FROM alpine

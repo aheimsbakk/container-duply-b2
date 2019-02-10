@@ -14,7 +14,7 @@ Use the docker container the same way you would use duply.
 
 Example:
 
-    docker run -u $UID -t -v $HOME:/data --rm duply-b2 usage
+    docker run -u $UID -t -v $HOME:/data --rm aheimsbakk/duply-b2 usage
 
 ### Caveats:
 
