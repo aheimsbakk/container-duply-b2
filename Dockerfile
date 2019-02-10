@@ -1,5 +1,5 @@
 #
-# Docker: systemd-ubuntu-18.10
+# Docker: duply-b2
 # 
 # Docker with newer version of duplicity, duply and backblaze integration
 # 
