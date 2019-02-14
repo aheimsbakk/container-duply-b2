@@ -11,7 +11,7 @@ FROM alpine
 
 # Install duply and backblaze bindings
 RUN apk update; \
-    apk add duply py2-pip; \
+    apk add dumb-init duply py2-pip; \
     pip install b2; \
     mkdir /data; \
     rm -rf /var/cache/apk/*
@@ -26,7 +26,7 @@ VOLUME /data
 WORKDIR /data
 
 # Run duply
-ENTRYPOINT ["/usr/bin/duply"]
+ENTRYPOINT ["/usr/bin/dumb-init", "--", "/usr/bin/duply"]
 
 # Usage
 CMD ["usage"]
